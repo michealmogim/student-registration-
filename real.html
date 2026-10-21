@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 30px 15px;
+        }
+
+        .container {
+            max-width: 550px;
+            margin: auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #164e83;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .gender-option {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 18px;
+            gap: 5px;
+        }
+
+        .gender-option input {
+            width: auto;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 12px;
+            background-color: #164e83;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0d355c;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <h1>Student Registration</h1>
+        <p>Please fill in your details below.</p>
+
+        <form action="#" method="post">
+
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="matric">Matriculation Number:</label>
+            <input type="text" id="matric" name="matric"
+                   placeholder="Enter your matric number" required>
+
+            <label for="department">Department:</label>
+            <select id="department" name="department" required>
+                <option value="">-- Select Department --</option>
+                <option value="Computer Science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value="Cyber Security">Cyber Security</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="Statistics">Statistics</option>
+            </select>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email"
+                   placeholder="example@email.com" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"
+                   placeholder="Enter your phone number" required>
+
+            <label>Gender:</label>
+            <div class="gender-option">
+                <input type="radio" id="male" name="gender"
+                       value="Male" required>
+                <label for="male">Male</label>
+            </div>
+
+            <div class="gender-option">
+                <input type="radio" id="female" name="gender"
+                       value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="gender-option">
+                <input type="radio" id="other" name="gender"
+                       value="Other">
+                <label for="other">Other</label>
+            </div>
+
+            <label for="programme">Programme:</label>
+            <select id="programme" name="programme" required>
+                <option value="">-- Select Programme --</option>
+                <option value="ND">National Diploma (ND)</option>
+                <option value="HND">Higher National Diploma (HND)</option>
+                <option value="BSc">Bachelor's Degree</option>
+                <option value="MSc">Master's Degree</option>
+                <option value="PhD">Doctor of Philosophy (PhD)</option>
+            </select>
+
+            <button type="submit">Submit Registration</button>
+
+        </form>
+    </main>
+</body>
+</html>
